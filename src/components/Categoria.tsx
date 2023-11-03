@@ -13,7 +13,6 @@ export default function Categoria({ categoria }: Props) {
   
     return (
     <div
-      key={id}
       onClick={() => handleClickCategoria(id)}
       className={`${chooseCategory()}
       } flex items-center gap-4 p-3 border
