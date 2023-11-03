@@ -1,8 +1,12 @@
-import { useContext } from "react"
-import QuioscoContext from "../context/QuioscoProvider"
+import { useContext } from 'react';
+import QuioscoContext from '../context/QuioscoProvider';
 
 const useQuiosco = () => {
-    return useContext(QuioscoContext)
-}
+  const context = useContext(QuioscoContext);
+//   if (context) {
+//     throw new Error('useQuiosco must be used within a QuioscoProvider');
+//   }
+  return context;
+};
 
-export default useQuiosco
+export default useQuiosco;
